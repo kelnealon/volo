@@ -27,9 +27,26 @@
 		</ul>
 	</div>
     
-   <img src="images/tagline2.png">
+   <img class="tagline" src="images/tagline2.png">
+    
+    <div id="properties" data-1700="top:100%;" data-2200="top:0%;" data-3000="display:block;" data-3700="top:-100%;display:none;">
+		<h2>UNITED STATES</h2>
+		<p>width, height, padding, font-size, z-index, blah blah blah</p>
+	</div>
 
 	<!-- Scripts -->
+    <script type="text/javascript" src="dist/skrollr.min.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
 	<script src="scripts/jquery.js"></script>
 	<script src="deploy/jquery.parallax.js"></script>
 	<script>
